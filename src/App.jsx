@@ -6,6 +6,8 @@ import {
 } from "react-router-dom";
 import Home from "./views/Home";
 import './App.css';
+import CharacterList from "./components/CharacterList";
+import CharacterDetail from "./components/CharacterDetail";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="character" element={<CharacterList />} />
+      <Route path='character/:name' element={<CharacterDetail/>}/>
         </Routes>
         </BrowserRouter>
     </div>

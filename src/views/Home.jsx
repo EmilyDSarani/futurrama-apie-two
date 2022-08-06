@@ -1,9 +1,11 @@
 import React from 'react'
+import CharacterList from '../components/CharacterList'
+import List from './Character/List'
 
 export default function Home() {
   return (
     <div>
-        <h1>Hello Karl</h1>
+        <List />
     </div>
   )
 }
